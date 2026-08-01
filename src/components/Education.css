@@ -1,0 +1,72 @@
+.education__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 50px;
+}
+
+.education__school {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  color: var(--text-mute);
+  font-size: 0.95rem;
+}
+
+.education__meta {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.education__cpi {
+  color: var(--accent);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 100px;
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.achievement {
+  background: var(--panel-hover);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 22px;
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.achievement:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.achievement__title {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.achievement__detail {
+  margin-top: 8px;
+  font-size: 0.88rem;
+  color: var(--text-mute);
+}
+
+@media (max-width: 860px) {
+  .education__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .achievements {
+    grid-template-columns: 1fr;
+  }
+}
