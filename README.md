@@ -2,42 +2,55 @@
 
 A personal portfolio built with **Vite + React (JS)**. Frontend only, no backend — content lives in `src/data/portfolio.js`, animations are powered by **Framer Motion**.
 
+**Live:** [portfolio-3v4p.onrender.com](https://portfolio-3v4p.onrender.com/)
+
 ## Run it locally
 
-```bash
+\```bash
 npm install
 npm run dev
-```
+\```
 
 Then open the URL it prints (usually `http://localhost:5173`).
 
 ## Build for production
 
-```bash
+\```bash
 npm run build
-```
+\```
 
-This outputs a static site into `dist/` — deploy that folder to Vercel, Netlify, Render (static site), or GitHub Pages.
+This outputs a static site into `dist/`.
+
+## Deployment
+
+Currently deployed on **Render** as a static site:
+
+| Setting | Value |
+|---|---|
+| Build Command | `npm run build` |
+| Publish Directory | `dist` |
+
+The same `dist/` output also works on Vercel, Netlify, or GitHub Pages if you ever want to move or mirror it.
 
 ## Edit your content
 
 Everything text-based (name, links, experience, projects, skills, education) lives in one file:
 
-```
+\```
 src/data/portfolio.js
-```
+\```
 
 Change the values there and every section updates automatically — no need to touch the components.
 
 ## Structure
 
-```
+\```
 src/
   components/     # one section = one .jsx + matching .css file
   data/           # portfolio.js — all your content
   index.css       # design tokens (colors, fonts, spacing) + base styles
   App.jsx         # composes the page from components
-```
+\```
 
 ## Design notes
 
