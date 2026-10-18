@@ -19,8 +19,8 @@ export default function About() {
               <span className="about__fact-label">production-ready apps built &amp; deployed</span>
             </div>
             <div className="about__fact">
-              <span className="about__fact-num">220+</span>
-              <span className="about__fact-label">DSA problems solved on LeetCode</span>
+              <span className="about__fact-num">400+</span>
+              <span className="about__fact-label">DSA problems solved on LeetCode , CodeForces & GFG</span>
             </div>
             <div className="about__fact">
               <span className="about__fact-num">8.2</span>
